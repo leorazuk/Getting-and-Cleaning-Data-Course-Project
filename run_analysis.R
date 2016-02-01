@@ -38,3 +38,5 @@ library(dplyr)
 testAndTrainForActivityAndSubjectData = group_by(testAndTrainData, activity, subject)
 testAndTrainForActivityAndSubjectData = summarise_each(testAndTrainForActivityAndSubjectData, funs(mean))
 
+#Creates a CSV file with testAndTrainForActivityAndSubjectData.
+write.table(testAndTrainForActivityAndSubjectData, "testAndTrainForActivityAndSubjectData.txt", row.name=FALSE, sep = ";")

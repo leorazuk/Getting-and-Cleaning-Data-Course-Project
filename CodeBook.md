@@ -270,3 +270,4 @@ TRANSFORMATION STEPS:
 	14: Binds the activities column from yTrain in train as its first column.
 	15: Creates a data frame named testAndTrainData by binding the rows of train in test.
 	16: Creates a data frame named testAndTrainForActivityAndSubjectData with the measurements means of testAndTrainData grouped by activity and subject.
+	17: Creates a CSV text file named testAndTrainForActivityAndSubjectData.txt with testAndTrainForActivityAndSubjectData.
